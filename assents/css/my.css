@@ -1,6 +1,11 @@
 nav {
     background-color: #303030;
 }
+
+#div-img {
+    width: 52.7%;
+}
+
 @media  screen and (max-width: 1054px) {
     .div-section {
         display: none;
@@ -8,15 +13,21 @@ nav {
     .section {
         display: none;
     }
-    .div-img {
+    #div-img {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        width: 1054px;
+    }
+    .div-res {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width:  150px;
+        height: 70px;
     }
 }
-.div-img {
-    width: 52.7%;
-}
+
 ul, a {
     color: white;
     padding-left: 4px;
@@ -44,11 +55,13 @@ ul, a {
 .red {
     width: 32%;
 } 
-@media screen and (max-width:1140px)  {
+@media screen and (max-width:1054px)  {
     .red {
         display: none;
     }
+    
 }
+
 .fundo-btn-2 {
     background-color: #ff0303;
     border-radius: 5px;
@@ -59,6 +72,25 @@ ul, a {
     transition: all 0.2s;
     border: 3px solid #ff0303;
 }
+@media screen and (max-width: 1134px ) {
+    .fundo-btn-2 {
+        width: 200px;
+        height: 70px;
+        padding: 0;
+    }
+    .red {
+        width: 200px;
+        height: 70px;
+    }
+    #icon-div1, #icon-div2 {
+        display: none;
+    }
+    #div-text {
+        width: 190px;
+        height: 60px;
+    }
+    
+}
 input:focus {
     outline: none;   
 }
@@ -66,4 +98,31 @@ input:focus {
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: white;
   }
-  
+@media  screen and (max-width: 1220px) {
+    .p123 {
+        display: none;
+    }
+    .p012 {
+        line-height: 13px;
+        position: relative;
+        bottom: 8px;
+    }
+    .icon-1 {
+        position: relative;
+        top: 7px;
+    }
+}
+@media  (min-width: 1054px) {
+    #menu-one {
+        display: none;
+    }
+    #heart {
+        display: none;
+    }
+    #brit {
+        display: none;
+    }
+    #cart {
+        display: none;
+    }
+}
