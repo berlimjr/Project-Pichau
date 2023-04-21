@@ -1,32 +1,14 @@
 nav {
     background-color: #303030;
 }
-
+body {
+    overflow-x: hidden;
+}
 #div-img {
     width: 52.7%;
 }
 
-@media  screen and (max-width: 1054px) {
-    .div-section {
-        display: none;
-    }
-    .section {
-        display: none;
-    }
-    #div-img {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 1054px;
-    }
-    .div-res {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        width:  150px;
-        height: 70px;
-    }
-}
+
 
 ul, a {
     color: white;
@@ -98,6 +80,32 @@ input:focus {
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: white;
   }
+main {
+    background-color: #303030;
+
+}
+.backdrop1 {
+    background-position: center;
+    background-image: url(/assents/img/2023_-_14_a_28_abr_-_Descobrimento_do_Brasil_-_1920x450.jpg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    display: flex;
+    background-clip: content-box;
+    background-size: contain;
+}
+@media screen and (max-width: 1054px) {
+    .backdrop1 {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .backdrop1 {
+        width: 340px;
+    }
+}
+
+
 @media  screen and (max-width: 1220px) {
     .p123 {
         display: none;
@@ -126,3 +134,26 @@ input[type="search"]::-webkit-search-cancel-button {
         display: none;
     }
 }
+@media  screen and (max-width: 1054px) {
+    .div-section {
+        display: none;
+    }
+    .section {
+        display: none;
+    }
+    #div-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1054px;
+    }
+    .div-res {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width:  150px;
+        height: 70px;
+    }
+}
+
+
